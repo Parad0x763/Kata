@@ -1,0 +1,1 @@
+use 'ctrl+alt+a' to open a window to pass arguments for a c/c++ program!
