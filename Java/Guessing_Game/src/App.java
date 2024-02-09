@@ -9,10 +9,10 @@ public class App {
         
         // InputStream inputStream = new Scanner(System.in);
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
+        System.out.println("Please enter your initial guess! Enter 'Q' to quit.");
+        guess = reader.readLine();
         while (!guess.equals("Q")) {
-            System.out.println("Please guess the number between 1 and 100, enter 'Q' to quit.");
-            guess = reader.readLine();
+            
             int number_guess = Integer.parseInt(guess);
             if (number_guess == randomNumberGenerated.GetRandomNumber()) {
                 System.out.println("Correct Guess!!");
@@ -22,6 +22,9 @@ public class App {
             } else {
                 System.out.println("Incorrect Guess! Guess was low.");
             }
+
+            System.out.println("Please guess the number between 1 and 100, enter 'Q' to quit.");
+            guess = reader.readLine();
         }        
     }
 }
